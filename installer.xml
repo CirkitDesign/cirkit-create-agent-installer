@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installer name="CirkitCreateAgent" version="${project.version}">
+  <option name="defaultInstallationDirectory" value="$PROGRAMFILES/CirkitCreateAgent"/>
+  <option name="readmeFile" value="README.txt"/>
+  <option name="licenseFile" value="LICENSE.txt"/>
+
+  <variable name="installationDirectory" value="$defaultInstallationDirectory"/>
+
+  <files>
+    <!-- Linux files -->
+    <file source="artifacts/linux/Cirkit_Create_Agent" target="$installationDirectory/Cirkit_Create_Agent" platform="linux"/>
+
+    <!-- Windows files -->
+    <file source="artifacts/windows/Cirkit_Create_Agent.exe" target="$installationDirectory/Cirkit_Create_Agent.exe" platform="windows"/>
+
+    <!-- Other files like readme and license if any -->
+    <!-- <file source="docs/README.txt" target="$installationDirectory/README.txt"/>
+    <file source="docs/LICENSE.txt" target="$installationDirectory/LICENSE.txt"/> -->
+  </files>
+
+  <actions>
+    <!-- Add any custom actions here, such as creating shortcuts, setting environment variables, etc. -->
+    <execute file="$installationDirectory/Cirkit_Create_Agent" platform="linux" description="Starting Cirkit Create Agent"/>
+    <execute file="$installationDirectory/Cirkit_Create_Agent.exe" platform="windows" description="Starting Cirkit Create Agent"/>
+  </actions>
+
+  <platforms>
+    <platform name="linux">
+      <executable file="$installationDirectory/Cirkit_Create_Agent"/>
+    </platform>
+    <platform name="windows">
+      <executable file="$installationDirectory/Cirkit_Create_Agent.exe"/>
+    </platform>
+  </platforms>
+</installer>
