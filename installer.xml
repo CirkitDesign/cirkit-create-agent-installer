@@ -2,7 +2,7 @@
     <shortName></shortName>
     <fullName>Cirkit Designer</fullName>
     <version>${project.version}</version>
-    <installerFilename>CirkitCreateAgent-${platform-name}-${architecture}</installerFilename>
+    <installerFilename>CirkitCreateAgent-${platform}-${architecture}</installerFilename>
     <componentList>
         <component>
             <name>default</name>
