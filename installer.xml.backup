@@ -2,7 +2,6 @@
     <shortName></shortName>
     <fullName>Cirkit Designer</fullName>
     <version>${project.version}</version>
-    <installerFilename>CirkitCreateAgent-${platform-name}-${architecture}</installerFilename>
     <componentList>
         <component>
             <name>default</name>
@@ -58,7 +57,7 @@
                     <platforms>windows-x64</platforms>
                     <distributionFileList>
                         <distributionFile>
-                            <origin>C:/Users/Vince/Desktop/git_repos/cirkit-create-agent-installer/artifacts/${platform}/Cirkit_Create_Agent${extension}</origin>
+                            <origin>artifacts/${platform}/Cirkit_Create_Agent${extension}</origin>
                         </distributionFile>
                     </distributionFileList>
                 </folder>
@@ -102,4 +101,5 @@
         </directoryParameter>
     </parameterList>
 </project>
+
 
