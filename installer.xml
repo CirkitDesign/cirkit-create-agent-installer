@@ -57,7 +57,7 @@
                     <platforms>windows-x64</platforms>
                     <distributionFileList>
                         <distributionFile>
-                            <origin>artifacts/windows/CirkitCreateAgent-windows-amd64.exe</origin>
+                            <origin>artifacts/${platform}/CirkitCreateAgent-${os}-${architecture}.exe</origin>
                         </distributionFile>
                     </distributionFileList>
                 </folder>
