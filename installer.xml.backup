@@ -2,6 +2,7 @@
     <shortName></shortName>
     <fullName>Cirkit Designer</fullName>
     <version>${project.version}</version>
+    <installerFilename>CirkitCreateAgent-${platform}-${architecture}${extension}</installerFilename>
     <componentList>
         <component>
             <name>default</name>
@@ -15,6 +16,11 @@
                     <destination>${installdir}</destination>
                     <name>programfiles</name>
                     <platforms>all</platforms>
+                    <distributionFileList>
+                        <distributionFile>
+                            <origin>artifacts/${platform}/Cirkit_Create_Agent${extension}</origin>
+                        </distributionFile>
+                    </distributionFileList>
                     <shortcutList>
                         <shortcut>
                             <comment>Uninstall</comment>
@@ -55,11 +61,6 @@
                     <destination>${installdir}</destination>
                     <name>programfileswindows64</name>
                     <platforms>windows-x64</platforms>
-                    <distributionFileList>
-                        <distributionFile>
-                            <origin>artifacts/${platform}/Cirkit_Create_Agent${extension}</origin>
-                        </distributionFile>
-                    </distributionFileList>
                 </folder>
                 <folder>
                     <description>Program Files</description>
@@ -101,5 +102,4 @@
         </directoryParameter>
     </parameterList>
 </project>
-
 
