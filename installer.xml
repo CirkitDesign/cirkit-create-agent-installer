@@ -91,9 +91,11 @@
             <serviceName>Cirkit Create Agent</serviceName>
             <startType>auto</startType>
         </createWindowsService>
-        <startService>
-            <serviceName>CirkitCreateAgent</serviceName>
-        </startService>
+        <startWindowsService>
+            <delay>15000</delay>
+            <displayName>Cirkit Create Agent</displayName>
+            <serviceName>Cirkit Create Agent</serviceName>
+        </startWindowsService>
     </postInstallationActionList>
     <enableRollback>1</enableRollback>
     <enableTimestamp>1</enableTimestamp>

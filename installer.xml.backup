@@ -83,6 +83,15 @@
             </startMenuShortcutList>
         </component>
     </componentList>
+    <postInstallationActionList>
+        <createWindowsService>
+            <displayName>Cirkit Create Agent</displayName>
+            <program>${installdir}/Cirkit_Create_Agent${extension}</program>
+            <programArguments></programArguments>
+            <serviceName>Cirkit Create Agent</serviceName>
+            <startType>auto</startType>
+        </createWindowsService>
+    </postInstallationActionList>
     <enableRollback>1</enableRollback>
     <enableTimestamp>1</enableTimestamp>
     <vendor>Cirkit Design LLC</vendor>
