@@ -5,6 +5,7 @@
     <installerFilename>CirkitCreateAgent-${project.version}-${platform}-${architecture}-installer${installerextension}</installerFilename>
     <leftImage>icons/install_icons/install_left_side_image_163_314.png</leftImage>
     <logoImage>icons/install_icons/install_48_48.png</logoImage>
+    <splashImage>icons/install_icons/splash_image_300_300.png</splashImage>
     <componentList>
         <component>
             <name>default</name>
