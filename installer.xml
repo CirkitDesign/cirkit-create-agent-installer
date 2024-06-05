@@ -109,10 +109,11 @@
     <postInstallationActionList>
         <runProgram>
             <program>${installDir}/Cirkit_Create_Agent.exe</program>
-            <ruleList>           
-                <platformTest type= or ' windows or '/>         
-            </ruleList>
             <programArguments></programArguments>
+            <ruleEvaluationLogic>or</ruleEvaluationLogic>
+            <ruleList>
+                <platformTest type="windows"/>
+            </ruleList>
         </runProgram>
     </postInstallationActionList>
 
