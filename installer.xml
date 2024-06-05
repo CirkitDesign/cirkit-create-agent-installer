@@ -1,8 +1,10 @@
 <project>
     <shortName></shortName>
-    <fullName>Cirkit Designer</fullName>
+    <fullName>Cirkit Create Agent</fullName>
     <version>${project.version}</version>
     <installerFilename>CirkitCreateAgent-${project.version}-${platform}-${architecture}-installer${installerextension}</installerFilename>
+    <leftImage>icons/install_icons/install_left_side_image_163_314.png</leftImage>
+    <logoImage>icons/install_icons/install_48_48.png</logoImage>
     <componentList>
         <component>
             <name>default</name>
