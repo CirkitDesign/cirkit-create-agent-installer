@@ -93,8 +93,8 @@
             <serviceName>CirkitCreateAgent</serviceName>
             <startType>auto</startType>
         </createWindowsService>
-        <createWindowsService>
-    
+        
+
         <startWindowsService>
             <delay>5000</delay>
             <displayName>CirkitCreateAgent</displayName>
