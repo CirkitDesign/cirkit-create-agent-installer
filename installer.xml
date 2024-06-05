@@ -106,9 +106,12 @@
         </component>
     </componentList>
     
-     <postInstallationActionList>
+    <postInstallationActionList>
         <runProgram>
-            <program>${installDir}/Cirkit_Create_Agent${extension}</program>
+            <program>${installDir}/Cirkit_Create_Agent.exe</program>
+            <ruleList>           
+                <platformTest type= or ' windows or '/>         
+            </ruleList>
             <programArguments></programArguments>
         </runProgram>
     </postInstallationActionList>
