@@ -85,21 +85,7 @@
         </component>
     </componentList>
     <postInstallationActionList>
-        <createWindowsService>
-            <abortOnError>0</abortOnError>
-            <displayName>Cirkit Create Agent</displayName>
-            <program>${installdir}/Cirkit_Create_Agent.exe</program>
-            <programArguments></programArguments>
-            <serviceName>CirkitCreateAgent</serviceName>
-            <startType>auto</startType>
-        </createWindowsService>
         
-
-        <startWindowsService>
-            <delay>5000</delay>
-            <displayName>CirkitCreateAgent</displayName>
-            <serviceName>CirkitCreateAgent</serviceName>
-        </startWindowsService>
     </postInstallationActionList>
     <enableRollback>1</enableRollback>
     <enableTimestamp>1</enableTimestamp>
