@@ -3,6 +3,7 @@
     <fullName>Cirkit Designer</fullName>
     <version>${project.version}</version>
     <installerFilename>CirkitCreateAgent-${platform}-${architecture}${extension}</installerFilename>
+    <enableDebugger>1</enableDebugger>
     <componentList>
         <component>
             <name>default</name>
@@ -84,13 +85,7 @@
         </component>
     </componentList>
     <postInstallationActionList>
-        <createWindowsService>
-            <displayName>Cirkit Create Agent</displayName>
-            <program>${installdir}/Cirkit_Create_Agent${extension}</program>
-            <programArguments></programArguments>
-            <serviceName>Cirkit Create Agent</serviceName>
-            <startType>auto</startType>
-        </createWindowsService>
+        
     </postInstallationActionList>
     <enableRollback>1</enableRollback>
     <enableTimestamp>1</enableTimestamp>
@@ -101,7 +96,7 @@
             <description>Installer.Parameter.installdir.description</description>
             <explanation>Installer.Parameter.installdir.explanation</explanation>
             <value></value>
-            <default>CirkitCreateAgent-${platform}-${architecture}</default>
+            <default>CirkitCreateAgent</default>
             <allowEmptyValue>0</allowEmptyValue>
             <ask>yes</ask>
             <cliOptionName>prefix</cliOptionName>
