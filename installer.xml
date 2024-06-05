@@ -3,6 +3,7 @@
     <fullName>Cirkit Designer</fullName>
     <version>${project.version}</version>
     <installerFilename>CirkitCreateAgent-${platform}-${architecture}${extension}</installerFilename>
+    <enableDebugger>1</enableDebugger>
     <componentList>
         <component>
             <name>default</name>
