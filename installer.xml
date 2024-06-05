@@ -101,14 +101,43 @@
             </startMenuShortcutList>
         </component>
     </componentList>
+
+     <postInstallationActionList>
+        <writeFile>
+            <path>~/.config/autostart</path>
+            <encoding>utf-8</encoding>
+            <text>
+                [Desktop Entry]
+                Type=Application
+                Version=${project.version}
+                Name=cirkit-create-agent
+                Comment=
+                Exec=${installdir}/Cirkit_Create_Agent
+                Terminal=false
+            </text>
+            <ruleList>
+                <platformTest type="linux"/>
+            </ruleList>
+        </writeFile>
+    </postInstallationActionList>
     
     <finalPageActionList>
         <runProgram>
             <program>${installDir}/Cirkit_Create_Agent.exe</program>
             <programArguments></programArguments>
+            <show>0</show>
             <ruleEvaluationLogic>or</ruleEvaluationLogic>
             <ruleList>
                 <platformTest type="windows"/>
+            </ruleList>
+        </runProgram>
+        <runProgram>
+            <program>${installDir}/Cirkit_Create_Agent</program>
+            <programArguments></programArguments>
+            <show>0</show>
+            <ruleEvaluationLogic>or</ruleEvaluationLogic>
+            <ruleList>
+                <platformTest type="linux"/>
             </ruleList>
         </runProgram>
     </finalPageActionList>
@@ -123,7 +152,7 @@
             <description>Installer.Parameter.installdir.description</description>
             <explanation>Installer.Parameter.installdir.explanation</explanation>
             <value></value>
-            <default>CirkitCreateAgent</default>
+            <default>${platform-install-prefix}/CirkitCreateAgent</default>
             <allowEmptyValue>0</allowEmptyValue>
             <ask>yes</ask>
             <cliOptionName>prefix</cliOptionName>
