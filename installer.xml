@@ -118,7 +118,7 @@
     <preInstallationActionList>
         <setInstallerVariable>
             <name>installdir</name>
-            <default>${windows_folder_appdata}/CirkitCreateAgent</default>
+            <value>${windows_folder_appdata}/CirkitCreateAgent</value>
             <ruleList>
                 <platformTest>
                     <type>windows</type>
