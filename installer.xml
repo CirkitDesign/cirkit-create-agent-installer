@@ -7,6 +7,8 @@
     <logoImage>icons/install_icons/install_48_48.png</logoImage>
     <splashImage>icons/install_icons/splash_image_300_300.png</splashImage>
     <windowsExecutableIcon>icons/install_icons/install_windows_ico.ico</windowsExecutableIcon>
+    <windowsUninstallerExecutableIcon>icons/install_icons/install_windows_ico.ico</windowsUninstallerExecutableIcon>
+    <productDisplayIcon>${installdir}/icons/install_windows_ico.ico</productDisplayIcon>
     <componentList>
         <component>
             <name>default</name>
@@ -24,12 +26,16 @@
                         <distributionFile>
                             <origin>artifacts/${platform}/Cirkit_Create_Agent${extension}</origin>
                         </distributionFile>
+                        <distributionFile>
+                            <origin>icons/install_icons/install_windows_ico.ico</origin>
+                            <destination>${installdir}/icons/install_windows_ico.ico</destination>
+                        </distributionFile>
                     </distributionFileList>
                     <shortcutList>
                         <shortcut>
                             <comment>Uninstall</comment>
                             <exec>${installdir}/${uninstallerName}</exec>
-                            <icon></icon>
+                            <icon>${installdir}/icons/install_windows_ico.ico</icon>
                             <name>Uninstall ${product_fullname}</name>
                             <path>${installdir}</path>
                             <platforms>all</platforms>
@@ -37,7 +43,7 @@
                             <runInTerminal>0</runInTerminal>
                             <windowsExec>${installdir}/${uninstallerName}.exe</windowsExec>
                             <windowsExecArgs></windowsExecArgs>
-                            <windowsIcon></windowsIcon>
+                            <windowsIcon>${installdir}/icons/install_windows_ico.ico</windowsIcon>
                             <windowsPath>${installdir}</windowsPath>
                         </shortcut>
                     </shortcutList>
@@ -99,7 +105,7 @@
                     <runInTerminal>0</runInTerminal>
 	                <windowsExec>${installdir}/Cirkit_Create_Agent.exe</windowsExec>
                     <windowsExecArgs></windowsExecArgs>
-                    <windowsIcon></windowsIcon>
+                    <windowsIcon>${installdir}/icons/install_windows_ico.ico</windowsIcon>
                     <windowsPath>${installdir}/</windowsPath>
                 </startMenuShortcut>
                 <startMenuShortcut>
@@ -109,7 +115,7 @@
                     <runInTerminal>0</runInTerminal>
                     <windowsExec>${installdir}/${uninstallerName}.exe</windowsExec>
                     <windowsExecArgs></windowsExecArgs>
-                    <windowsIcon></windowsIcon>
+                    <windowsIcon>${installdir}/icons/install_windows_ico.ico</windowsIcon>
                     <windowsPath>${installdir}/</windowsPath>
                 </startMenuShortcut>
             </startMenuShortcutList>
